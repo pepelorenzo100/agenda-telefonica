@@ -1,0 +1,18 @@
+spring:
+    datasource:
+    url:
+jdbc:postgresql://localhost:5435/agenda_db
+    username:postgres 
+    password:postgres
+    driver-class-name:org.progresql.driver
+ jpa:
+    hibernate:
+        ddl-auto: update
+    show-sql:false
+    properties:
+        hibernate:
+            dialect:
+org.hibernate.dialect.PostgreSqlDialect
+            format_sql: true
+ server:
+    port: 8080
